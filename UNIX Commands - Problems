@@ -1,0 +1,13 @@
+UNIX Commands - Problems
+
+1. history | grep '\scat' | wc -l
+
+2. cat /usr/share/dict/words | grep '^a' | wc -w
+
+3. Linux, 3.2.0
+
+4. uname -a
+
+5. cat /usr/share/dict/words | grep '^a.*s$'
+
+6. wget "www.lighthouselabs.ca/index.html"

@@ -1,0 +1,739 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Writing your first C program | Lighthouse Logo</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.4.3">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../section1/1.2.html" />
+    
+    
+    <link rel="prev" href="../section1/index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="2.1" data-basepath=".." data-revision="Wed May 18 2016 10:18:28 GMT-0700 (PDT)">
+    
+
+<div class="book-summary">
+    <div class="book-search" role="search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="section0/index.html">
+            
+                
+                    <a href="../section0/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Getting Setup
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="section0/0.1.html">
+            
+                
+                    <a href="../section0/0.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Setting up your mac
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="section0/0.2.html">
+            
+                
+                    <a href="../section0/0.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Terminal
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="section0/0.3.html">
+            
+                
+                    <a href="../section0/0.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Xcode
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="section0/0.4.html">
+            
+                
+                    <a href="../section0/0.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Setting up Git
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="section1/index.html">
+            
+                
+                    <a href="../section1/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Introduction to Programming C
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.1" data-path="section1/1.1.html">
+            
+                
+                    <a href="../section1/1.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Writing your first C program
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="section1/1.2.html">
+            
+                
+                    <a href="../section1/1.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Clarifying your code
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="section1/1.3.html">
+            
+                
+                    <a href="../section1/1.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Variables
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="section1/1.4.html">
+            
+                
+                    <a href="../section1/1.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Lists of Characters
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="section1/1.5.html">
+            
+                
+                    <a href="../section1/1.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Decisions, decisions...
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="section1/1.6.html">
+            
+                
+                    <a href="../section1/1.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        Loops
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="section1/1.7.html">
+            
+                
+                    <a href="../section1/1.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        Assignment #1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="section1/1.8.html">
+            
+                
+                    <a href="../section1/1.8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        Interacting with users
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="section1/1.9.html">
+            
+                
+                    <a href="../section1/1.9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        Assignment #2
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="section2/index.html">
+            
+                
+                    <a href="../section2/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Introduction to Objective-C
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="section2/2.1.html">
+            
+                
+                    <a href="../section2/2.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Your first app
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="section2/2.2.html">
+            
+                
+                    <a href="../section2/2.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Todo list (Part 1)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="section2/2.3.html">
+            
+                
+                    <a href="../section2/2.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Todo list (Part 2)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="section2/2.4.html">
+            
+                
+                    <a href="../section2/2.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        Todo list (Part 3)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="section2/2.6.html">
+            
+                
+                    <a href="../section2/2.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        Assignment #1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="section2/2.7.html">
+            
+                
+                    <a href="../section2/2.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        Assignment #2
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="section3/index.html">
+            
+                
+                    <a href="../section3/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Using Git &amp; GitHub
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="section3/3.1.html">
+            
+                
+                    <a href="../section3/3.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Pushing to Github
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="section4/index.html">
+            
+                
+                    <a href="../section4/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Extra Resources
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="section4/4.1.html">
+            
+                
+                    <a href="../section4/4.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Apple Guides
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="section4/4.2.html">
+            
+                
+                    <a href="../section4/4.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Great Videos
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="section4/4.3.html">
+            
+                
+                    <a href="../section4/4.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        C Videos
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Lighthouse Logo</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="writing-your-first-c-program">Writing your first C program</h1>
+<p>Let&apos;s jump right in and take a look at a complete C program:</p>
+<pre><code class="lang-c">
+<span class="hljs-comment">/* Prints &quot;Hello world!&quot; on the screen */</span>
+
+include &lt;stdio.h&gt;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Hello world!&quot;</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h3 id="the-breakdown">The breakdown</h3>
+<p>Understanding every line we write in a program is required in order to make sure our code compiles properly.  Let&apos;s breakdown every single line in the C program above.</p>
+<p><code>/* Prints &quot;Hello world!&quot; on the screen */</code></p>
+<ul>
+<li>is a comment in C</li>
+<li>We&apos;ll use comments in help clarify what our program does for both us and the readers of our program</li>
+<li>Don&apos;t worry to much about how to write a comment, we will cover that soon!</li>
+</ul>
+<p><code>include &lt;stdio.h&gt;</code></p>
+<ul>
+<li>is a statement which tells the compiler to insert the contents of <strong>stdio</strong> at that particular place.</li>
+<li>In C we use some functions like <strong>printf()</strong>, <strong>scanf()</strong>,
+Do we define it? No.</li>
+<li>These functions are not defined by the programmer. These functions are already defined inside the language library. To use these kinds of predefined functions, we have to include the corresponding header file.</li>
+</ul>
+<pre><code class="lang-c"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+
+}
+</code></pre>
+<ul>
+<li>the most important part of a C program is the <strong>main()</strong> function. At this point the distinction is not critical, <strong>main()</strong> is a C <em>function</em>, not a C command</li>
+<li>A function is nothing more than a routine that performs some task</li>
+<li>Some functions come with C and some are created by you. C programs are made up of one or more functions. Each program must <em>always</em> include a <strong>main()</strong> function. A function is distinguished from a command by the parenthesis that follow the function name.</li>
+</ul>
+<p>These are functions:
+<strong>main()</strong>, <strong>printf()</strong>, <strong>strlen()</strong></p>
+<p>and these are commands:
+<strong>return</strong>, <strong>while</strong>, <strong>int</strong>, <strong>if</strong> etc...</p>
+<p>Last but not least, what is inside our <strong>main()</strong> function:</p>
+<pre><code class="lang-c"><span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Hello world!&quot;</span>);
+<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+</code></pre>
+<ul>
+<li>The first line prints <code>Hello world!</code> to the screen</li>
+<li>The second line we need not worry about now but it is the value our function returns and 0 means the program is successful.</li>
+</ul>
+<h3 id="the-main-function">The main() function</h3>
+<p>Just as the home page is the beginning place to surf a website, <strong>main()</strong> is always the first place the computer begins when running your program. Even if <strong>main()</strong> is not the first function listed in your program, <strong>main()</strong> still determines the beginning of the program&apos;s execution.</p>
+<p>After the word <strong>main()</strong>, you always see an opening brace <code>({)</code>. When you find a matching closing brace <code>(})</code>, <strong>main()</strong> is finished.</p>
+<p>That wasn&apos;t so bad, right! Pat yourself on the back for experiencing your first program in C. :)</p>
+<h3 id="a-c-program-in-action">A C program in action</h3>
+<p>Please follow along:</p>
+<ol>
+<li>Open Terminal and cd in the <strong>~/desktop/lighthouse/c</strong> directory</li>
+<li>We will use <strong>vi</strong> to create our first C program called <strong>hello.c</strong></li>
+</ol>
+<iframe width="700" height="394" src="https://www.youtube.com/embed/NN8SEXtijLY?showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+<hr>
+<h3 id="compile-and-run-your-c-program">Compile and run your C program</h3>
+<ul>
+<li>compile with make</li>
+</ul>
+<p><code>make hello</code></p>
+<ul>
+<li>run with ./</li>
+</ul>
+<p><code>./hello</code></p>
+<h3 id="a-little-starter-challenge">A little starter challenge</h3>
+<p>Write your own C program by expanding on the initial example given above. Try to make your program print 3 interesting things about you.</p>
+<p>Once you are done, save the program in the C folder we created earlier in the setup.</p>
+<h5 id="hint">Hint</h5>
+<p>You will need 3 <strong>printf</strong> statements in order to complete the challenge.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../section1/index.html" class="navigation navigation-prev " aria-label="Previous page: Introduction to Programming C"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../section1/1.2.html" class="navigation navigation-next " aria-label="Next page: Clarifying your code"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2},"ga":{"token":"UA-30299155-2","configuration":"auto"}};
+    gitbook.start(config);
+});
+</script>
+
+        <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-30299155-2', 'auto');ga('send', 'pageview');</script>
+    </body>
+    
+</html>

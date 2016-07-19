@@ -1,0 +1,34 @@
+body#prep article {
+  max-width: 900px;
+}
+body#prep article section {
+  margin-bottom: 20px;
+}
+body#prep article section h1 {
+  text-align: center;
+}
+body#prep article div.actions {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+body#prep article strong {
+  font-weight: bold;
+}
+body#prep article li {
+  font-size: 16px;
+  line-height: 1.5em;
+  font-weight: 300;
+}
+body#prep article li > p {
+  margin-bottom: 0px;
+}
+body#prep #back-links {
+  display: none;
+  text-align: center;
+}
+body#prep #celebration-imagery {
+  width: 200px;
+  display: none;
+  margin: auto;
+}
